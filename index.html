@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inputs</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="sass/css/style.min.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<main class="main ">
+			<div class="main__container _container">
+				<h1 class="main__title">Create Account</h1>
+				<form class="form" id="form" action='#'>
+					<div class="input-wrapper input-wrapper__user-name">
+						<h2 class="input-name">First name*</h2>
+						<input class="form-input name _req" type="text" name="username" id="username" placeholder="Enter you first name">
+						<div class="username-error"></div>
+						<label for="username"></label>
+						
+					</div>
+
+					<div class="input-wrapper input-wrapper__last-name">
+						<h2 class="input-name">Last name</h2>
+						<input class="form-input" type="text" name="lastname" id="lastname" pattern="[a-z]"
+							title="Last name should only contain lowercase letters" placeholder="Enter you last name">
+						<label for="lastname"></label>
+					</div>
+
+					<div class="input-wrapper input-wrapper__email">
+						<h2 class="input-name">Email</h2>
+						<input class="form-input email _req" type="email" name="email" id="email" placeholder="Enter you email">
+						<div class="email-error"></div>
+						<label for="email"></label>
+						
+					</div>
+
+					<div class="input-wrapper input-wrapper__password">
+						<h2 class="input-name">Password*</h2>
+						<input class="form-input password _req" type="password" name="password" id="password" placeholder="Enter you password" autocomplete="off">
+						<div class="password-error"></div>
+						<label for="password"></label>
+						
+					</div>
+
+					<div class="input-wrapper input-wrapper__password-confirm">
+						<h2 class="input-name">Confirm Password*</h2>
+						<input class="form-input conf_pass _req" type="password" name="confirm-password" id="confirmPassword" placeholder="Enter you password again">
+						<div class="confirmPassword-error"></div>
+						<label for="confirm-password"></label>
+						
+					</div>
+
+					<div class="input-wrapper input-wrapper__gender">
+						<h2 class="input-name">Gender</h2>
+						<div class="gender-wrapper">
+							<input type="radio" name="gender" id="male"></input>
+							<label for="male">Male</label>
+							<input type="radio" name="gender" id="female"></input>
+							<label for="female">Female</label>
+						</div>
+					</div>
+
+					<div class="input-wrapper input-wrapper__hobbies">
+						<h2 class="input-name">Hobbies</h2>
+						<div class="hobbies-wrapper">
+
+							<input type="checkbox" name="hobbies" id="music">
+							<label for="music">Music</label>
+
+							<input type="checkbox" name="hobbies" id="sports"></input>
+							<label for="sports">Sports</label>
+							<input type="checkbox" name="hobbies" id="travel"></input>
+							<label for="travel">Travel</label>
+							<input type="checkbox" name="hobbies" id="movies"></input>
+							<label for="movies">Movies</label>
+						</div>
+					</div>
+
+
+					<div class="input-wrapper input-wrapper__source">
+						<h2 class="input-name">Source of Income</h2>
+						<div class="select">
+							<select name="source" id="source">
+								<option value="1">Employed</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="input-wrapper input-wrapper__income">
+						<h2 class="input-name">Income</h2>
+						<div class="slider">
+							<input type="range" name="income" id="range" min="0" max="10000" step="100" value="0">
+							<label id="range-value"></label>
+						</div>
+					</div>
+
+					<div class="input-wrapper input-wrapper__upload">
+						<h2 class="input-name">Upload Profile Picture</h2>
+						<input type="file" name="upload" id="upload" multiple>
+						<label for="upload"></label>
+					</div>
+
+					<div class="input-wrapper input-wrapper__age">
+						<h2 class="input-name">Age</h2>
+						<input type="number" name="age" id="age" min="0" max="100" value="18">
+						<label for="age"></label>
+					</div>
+
+					<div class="input-wrapper input-wrapper__bio">
+						<h2 class="input-name">Bio</h2>
+						<textarea name="bio" id="bio" type="text" cols="30" rows="10"></textarea>
+						<label for="bio"></label>
+					</div>
+
+					<button type="submit" class="form__btn" id="form__btn">Create</button>
+
+				</form>
+			</div>
+		</main>
+	</div>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
